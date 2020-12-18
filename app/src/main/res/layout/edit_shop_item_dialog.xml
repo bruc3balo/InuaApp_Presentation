@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="3dp"
+    android:layout_margin="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="1dp"
+        android:padding="2dp"
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:src="@mipmap/nfp_png"
+            android:id="@+id/commodityImage_admin_dialog"
+            android:background="#00FFFFFF"
+            android:scaleType="fitXY"
+            android:layout_margin="1dp"
+            android:layout_gravity="center"
+            android:padding="4dp"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_marginStart="10dp"
+            android:background="@color/semiBlack"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_gravity="center"
+                android:padding="4dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/commodityName_admin_dialog"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:hint="Name"/>
+
+                <EditText
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/commodityPrice_admin_dialog"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:hint="Price"/>
+
+                <EditText
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/commodityDescription_admin_dialog"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Description"/>
+
+                <EditText
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/commodityNumber_admin_dialog"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:hint="Number of items"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="1dp"
+        android:padding="2dp"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/shop_edit_admin_save"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:padding="10dp"
+            android:background="#ffffff"
+            android:src="@drawable/ic_save_"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
